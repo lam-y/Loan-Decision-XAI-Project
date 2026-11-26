@@ -1,0 +1,12 @@
+{
+    "Total_Samples": 300,
+    "ROUGE1_F1_Mean": 0.2619449592750686,
+    "ROUGE2_F1_Mean": 0.047911626502202015,
+    "ROUGEL_F1_Mean": 0.18981197521413692,
+    "BLEU_Score_Mean": 0.010205520705262807,
+    "BERTScore_F1_Mean": 0.835886973341306,
+    "BERTScore_Precision_Mean": 0.8333891290426254,
+    "BERTScore_Recall_Mean": 0.8389208918809891,
+    "XAI_Decision_Alignment_Accuracy_%": 28.666666666666668,
+    "XAI_Numerical_Grounding_Accuracy_%": 91.33333333333333
+}

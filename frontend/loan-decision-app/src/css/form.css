@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+  direction: ltr; /* ✅ تغيير مهم */
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  align-items: center;
+}
+
+.card input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: left; /* ✅ بدل right */
+  box-sizing: border-box;
+}
+
+/* 🟢 إضافة تنسيق select */
+.card select {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+  box-sizing: border-box;
+  background-color: white;
+  appearance: none; /* شكل نظيف */
+  cursor: pointer;
+}
+
+.card button {
+  padding: 12px 20px;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+.card button:hover {
+  background: #45a049;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.result.approved {
+  color: green;
+}
+
+.result.rejected {
+  color: red;
+}
+
+/* Loader */
+.loader {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.4;
+  }
+}
+
+.mini-loader {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-size: 14px;
+  color: #666;
+}
+
+.spinner-small {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ddd;
+  border-top: 2px solid #4CAF50;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.mini-loader {
+  font-style: italic;
+}
+
+select {
+  color: #000;
+}
+
+select.placeholder {
+  color: #999;
+}
+
+option {
+  color: #000;
+}
+
+/* placeholder option */
+.placeholder-option {
+  color: #999;
+}
+
+.error {
+  color: red;
+  font-size: 11px;
+  text-align: left;
+  margin: 0 0 0 0;
+  display: block;
+  width: 100%;
+}
+
+.banking-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-top: 2px solid #0066cc;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
